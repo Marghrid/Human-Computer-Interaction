@@ -1,0 +1,212 @@
+/* COPY TO OTHER FILE */
+.bill .orderButton:active{
+	background-color: white;
+}
+
+.foodDetailAddButton:active {
+	background-color: white;
+}
+
+.foodDetailCancelButton:active {
+	background-color: white;
+}
+
+.bill.initial .clickableArrow {
+	width:0;
+	 	position: absolute;
+    height: 100%;
+    background-color: inherit;
+    left: 100%;
+    bottom: 0;
+    vertical-align: middle;
+	transition: all .7s;
+}
+
+.bill.initial .clickableArrow>span {
+	font-size: 0;
+	transform: translate(0%, -50%);
+    top: 50%;
+    position: absolute;
+right: 3px;
+	transition: all .7s;
+}
+
+
+.bill.initial.behind .clickableArrow {
+ 
+	  width: 40px;
+   background-color: rgb(100, 60, 120);
+    transition: all .7s;
+
+}
+
+.bill.initial.behind .clickableArrow>span {
+    
+    font-size: 33px;
+  	
+
+    transition: all .7s;
+}
+
+/* COPY TO OTHER FILE */
+
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+                       supported by Chrome and Opera */
+}
+
+body {
+	/* New Theme */
+	background-color: #fafafa;
+	/* background-color: rgb(10,10,10); */
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 17px;
+	text-align: left;
+	transition: all .7s;
+}
+
+form {
+	font-size: 17px;
+	text-align: right;
+	font-family: 'Open Sans', sans-serif;
+
+	transition: all .7s;
+}
+
+input.textInput {
+	font-size: 17px;
+}
+
+input.numberInput {
+	font-size: 17px;
+	width: 135px;
+	margin: 10px;
+}
+
+.logo {
+	width: 450px;
+	position: relative;
+	top: 20px;
+	left: 20px;
+	transition: all 1s;
+	z-index: 500;
+
+}
+
+.circle {
+	border-style: solid;
+	border-width: 3px;
+	border-color: rgb(180,180,180);
+	border-radius: 50%;
+}
+
+.docker {
+	position: absolute;
+	width:    400px;
+}
+
+.buttSlot {
+	margin: 15px;
+}
+
+.butt {
+	display: block;
+	font-family:      'Open Sans', sans-serif;
+	font-size:        23px;
+	font-weight:      lighter;
+	width:            350px;
+	background-color: rgb(231, 41, 0);/* New Theme */
+	color: white;
+	padding:          18px;
+	margin: 0;
+	transition: all .7s;
+	text-align: center;
+}
+
+.butt:active {
+	background-color: rgb(240, 240, 240);
+	transition: all 0s;
+}
+
+.menu {
+	display:          block;
+	position:		  relative;
+	height:           400px;
+  width: 350px;
+	padding:     18px;
+	visibility:   visible;
+	background-color: rgb(42, 0, 75);/* New Theme */
+	transition:       all .7s;
+	margin: 			0;
+	color: white;
+	opacity: 1;
+	overflow: hidden;
+
+}
+
+.menu div {
+/*	display:     inline-block;*/
+	transition:  all .7s;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	text-align:  center;
+}
+
+.menu.hidden {
+	display: block;
+	height:           0px;
+	visibility:       hidden;
+	opacity:          0;
+	transition:       all .7s;
+	padding-top:      0;
+	padding-bottom:   0;
+}
+
+
+.hidden div  ,
+.hidden p    ,
+.hidden img  ,
+.hidden input,
+.hidden td   ,
+.hidden form {/*
+	height:       0;
+	font-size:    0;
+	padding:      0;
+	border: 0;
+	margin: 0;
+	transition:   all .7s;
+	transition:  all .7s;*/
+}
+.keyboardDiv{
+	margin:0;
+	padding: 0;
+	height: 340px;
+	transition: all 0.7s;
+}
+
+.keyboardDiv.hidden{
+	height: 0px;
+	transition: all 0.7s;
+}
+.keyboard{
+	margin: 0;
+	padding: 0;
+	width: 500px;
+	height: 340px;
+	transition: all 0.7s;
+}
+.keyboard.hidden{
+	height: 0px;
+	transition: all 0.7s;
+}
+
+
+

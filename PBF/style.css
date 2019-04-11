@@ -1,0 +1,31 @@
+/* style.css on ipm/PBF */
+
+body {
+	font-family: Verdana;
+	color: 		 rgb(80, 80, 80);
+	margin: 	 3vw;
+	text-align:  center;
+}
+
+h1 {
+	font-size: 175%;
+	color: 	   grey;
+}
+
+h2 {
+	font-size: 100%;
+}
+
+section {
+	margin-bottom: 10vh;
+}
+
+video {
+	height: 85vh;
+}
+
+footer {
+	color:      rgb(130, 130, 130);
+	margin-top: 4vh;
+	text-align: left;
+}

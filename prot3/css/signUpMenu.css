@@ -1,0 +1,134 @@
+.imageWCaption.login_method_img {
+	width: 160px;
+}
+
+.imageWCaption.login_method_img img {
+	height:	80px;
+}
+
+.signUpForm {
+	margin:15px;
+}
+
+.signUpForm input {
+	width:220px;
+	margin:15px;
+}
+
+/*** FINGERPRINT ***/
+
+#add_fingerprint_img {
+	display: inline-block;
+	width: 80px;
+	margin: 20px;
+	margin-top: 0;
+	vertical-align: top;
+}
+
+#add_fingerprint_txt {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 0;
+	width: 150px;
+	font-size: 19px;
+}
+
+#add_fingerprint_all_div {
+	padding: 40px;
+}
+
+/*** SMARTPHONE ***/
+
+.smartphone_td {
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: rgb(102, 60, 135);
+	padding: 7px;
+	width: 300px;
+	margin:auto;
+}
+
+.smartphone_td.selected {
+	background-color:rgb(142, 100, 175);
+}
+
+/*** CLIENTCARD ***/
+
+.designCard {
+	display: inline-block;
+	width: 160px;
+	margin: 5px;
+	vertical-align: top;
+	filter: drop-shadow(0px 0px 0px white);
+	transition: all 0.7s;
+}
+
+.designCard.selected{
+	filter: drop-shadow(0px 0px 7px white);
+	transition: all 0.7s;
+}
+
+.designCard.hidden {
+	opacity: 0;
+	transition: all 0.7s;
+}
+
+.designCard.selected.hidden{
+	opacity: 0;
+	transition: all 0.7s;
+}
+
+.clientCardNameForm {
+	text-align: left;
+	padding: 10px;
+	padding-left: 40px;
+}
+
+.clientCardNameForm input {
+	width: 265px;
+	margin-top: 3px;
+}
+
+.whiteCard{
+	color: black;
+}
+
+.blackCard{
+	color: white;
+}
+
+
+#selectedCard {
+	width: 250px;
+	margin: 20px;
+	vertical-align: top;
+	
+}
+
+#cardText {
+	position: absolute;
+	top: 295px;
+	left: 85px;
+	font-size: 10px;
+}
+
+#ccld_info {
+	text-align: center;
+	margin-top: 2px;
+	
+}
+
+#ccld_title {
+	margin-bottom: 4px;
+}
+
+#ccln_info {
+	text-align: left;
+	margin-left: 3px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+#ccln_title {
+	margin-bottom: 4px;
+}

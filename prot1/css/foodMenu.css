@@ -1,0 +1,18 @@
+.tab{
+	background-color: orange;
+	height: 20%;
+	border-radius: 20% 0% 0% 20%;
+	transition: all 0.1s;
+}
+
+.tab.selected{
+	background-color: white;
+	transition: all 0.1s;
+}
+
+.textTurn{
+	transform:  rotate(-90deg);
+	text-align: center;
+	transform-origin: 50% 100% 0 ;
+	font-size: 70%;
+}

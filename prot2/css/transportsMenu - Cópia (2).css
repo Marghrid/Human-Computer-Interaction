@@ -1,0 +1,109 @@
+.mapSidebar{
+  background-color: rgb(82,40,115);
+  position: absolute;
+  left: 0%;
+	bottom: 0%;
+	width: 25%;
+	height: 100%;
+}
+.mapBox{
+  background-color: green;
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  height: 300px;
+  width: 100%
+}
+
+/* Isto é giro, mas nao e o que eu quero 
+.mapTab{
+  border-color: rgb(82,40,115);
+  background: linear-gradient(rgb(130,130,160), rgb(110,110,130) 90%, rgb(50,50,100) 100%);
+  background-color: rgb(130,130,160);
+  height: 50px;
+  transition: all 0.7s;
+  
+}
+
+.mapTab.selected{  
+  background: linear-gradient(rgb(160,160,190), rgb(140,140,170) 90%, rgb(90,90,140) 100%);
+  transition: all 0s;
+} */
+
+
+
+
+.mapTab{
+  border-color: rgb(82,40,115);
+  background-color: rgb(130,130,160);
+  height: 50px;
+  transition: all 0.7s;
+  
+}
+
+.mapTab.selected{  
+  background-color:  rgb(90,90,220);
+  transition: all 0s;
+} 
+
+.Map{
+  position: absolute;
+  right: 0px;
+  background-color: blue;
+  height: 100%;
+}
+
+.Map img {
+  height: 100%
+}
+
+.mapTextLabel{
+  width: 170px;
+}
+
+.searchBox {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 98%;
+  height: 47px;
+  margin: 0;
+}
+
+.searchBox img{
+  position: absolute;
+  left: 0;
+  top: 10px;
+  height: 60%
+}
+
+.searchBox input{
+  position: absolute;
+  left: 35px;
+  top: 8px;
+  height: 24px;
+  width: 243px;
+}
+
+.searchButton {
+  position: absolute;
+  line-height: 30px;
+  font-size: 14px;
+  opacity: 100;
+  top: 8px;
+  left: 290px;
+  width: 80px;
+  height: 32px;
+  border-width: 2px;
+  border-style: solid;
+  
+}
+
+.searchButton.disabled{
+  opacity: 0;
+}
+
+.mapBox .proceedButton{
+  position: absolute;
+  
+}

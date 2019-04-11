@@ -1,0 +1,53 @@
+/* styles.css in ipm/Storyboards */
+body {
+	font-family: Verdana;
+	color: rgb(80, 80, 80);
+	margin: 3vw;
+	text-align: center;
+}
+
+h1 {
+	font-size: 175%;
+	color: grey;
+}
+
+h2 {
+	font-size: 100%;
+}
+
+img {
+	padding: 1vh;
+}
+
+#pedir_comida, #criar_conta, #login, #gerir_conta, #transportes {
+	display: inline-block;
+	width: 100%;
+}
+
+.pedir_comida_img, .criar_conta_img{
+	width: 48%;
+	vertical-align: top;
+}
+
+
+.login_img {
+	width: 85%;
+	vertical-align: top;
+}
+
+.transportes_img {
+	width: 55%;
+	vertical-align: top;
+}
+
+.gerir_conta_img {
+	width: 31%;
+	vertical-align: top;
+}
+
+footer {
+	color:      rgb(130, 130, 130);
+	margin-top: 4vh;
+	text-align: left;
+}
+

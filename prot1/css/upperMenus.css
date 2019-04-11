@@ -1,0 +1,142 @@
+.imageWCaption {
+	display:        inline-block;
+	width:          91px;
+	margin:         2px;
+	vertical-align: top;
+	padding: 10px;
+	filter: grayscale(0%);
+
+	transition: all .7s;
+}
+
+.imageWCaption:active {
+	background-color: rgb(102, 60, 135);;
+	transition: all 0s;
+}
+
+.imageWCaption img {
+	display: block;
+	height:  70px;
+	margin:  auto;
+
+	transition: all .7s;
+}
+
+.imageWCaption p {
+	display:    block;
+	font-size:  14px;
+	margin: 5px;
+	text-align: center;
+
+	transition: all .7s;
+}
+
+.hidden .imageWCaption    ,
+.hidden .imageWCaption>img,
+.hidden .imageWCaption>p  {
+	height: 0;
+	font-size: 0;
+	transition: all .7s;
+}
+
+.menu .title {
+	font-size: 21px;
+	font-weight: bold;
+	padding: 15px;
+
+	transition: all .7s;
+}
+
+.hidden .title {
+	font-size: 0;
+	transition: all .7s;
+}
+
+.bottomButtons {
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	right: 0;
+	left:0;
+	transition: all .7s;
+	margin: 5px;
+}
+
+.backButton, .proceedButton, .saveButton {
+	display: inline-block;
+	padding:     11px;
+	margin: 15px;
+	text-align:  center;
+	font-size:   15px;
+	font-weight: bold;
+	transition: all .7s;
+}
+
+.proceedButton {
+	opacity: 1;
+  border: 1px solid #FAFAFA;
+	/*border: .50px solid darkgreen;*/
+}
+
+.saveButton {
+	opacity: 1;
+	/*background-color: #2eb82e;*/
+	/*background-color: #0066ff;*/
+	background-color: #2050a0;
+}
+
+.backButton {
+	opacity: 1;
+	border: 1px solid #FAFAFA;
+}
+
+.proceedButton:active {
+	background-color: #1ea81e;
+	transition: all 0s;
+}
+
+
+.saveButton:active {
+	background-color: #1ea81e;
+	transition: all 0s;
+}
+
+.backButton:active {
+	background-color: #FAFAFA;
+	transition: all 0s;
+}
+
+
+.hidden .proceedButton ,
+.hidden .saveButton    ,
+.hidden .backButton    {
+	height:       0px;
+	font-size:    0;
+	padding:      0;
+	border-width: 0px;
+	transition:  all .7s;
+}
+
+.hidden .bottomButtons {
+	position: absolute;
+	transition: all .7s;
+	bottom: 0px;
+}
+
+.row {
+	display: block;
+	align-items: center;
+}
+
+.imageWCaption.disabled {
+	background-color: rgb(50,50,50);
+	filter: grayscale(100%);
+	
+}
+
+.proceedButton.disabled ,
+.saveButton.disabled    ,
+.backbutton.disabled    {
+	opacity: 0;
+	color: #7A7A7A;
+}

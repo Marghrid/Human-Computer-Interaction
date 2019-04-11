@@ -1,0 +1,116 @@
+.menu.toPayOrNotToPay ul {
+	text-align: left;
+	list-style-type: none;
+	font-size: 18px;
+	padding: 20px;
+	margin:0;
+	margin-bottom: 10px;
+	font-family: 'Open Sans', sans-serif;
+	max-height: 150px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.menu.toPayOrNotToPay input {
+	height: 20px;
+	width: 20px;
+	margin: 0;
+	margin-right: 8px;
+	vertical-align: middle;
+}
+.menu.toPayOrNotToPay li{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width:300px;
+}
+
+.hidden.menu.toPayOrNotToPay ul {
+	text-align: left;
+	list-style-type: none;
+	height:0;
+	margin:0;
+	padding: 0;
+}
+
+.hidden.menu.toPayOrNotToPay li,
+.hidden.menu.toPayOrNotToPay label,
+.hidden.menu.toPayOrNotToPay span,
+.hidden.menu.toPayOrNotToPay div ,
+.hidden.menu.toPayOrNotToPay .infoText {
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+	margin: 0;
+}
+
+.menu.toPayOrNotToPay .priceSpan {
+	display: inline-block;
+	float: right;
+}
+
+.menu.toPayOrNotToPay .totalDiv {
+	text-align: left;
+	font-size: 18px;
+	margin: 20px;
+	margin-top: 0;
+	padding-left: 28px;
+	padding-top: 4px;
+	border-top: 1px solid white;
+	width:272px;
+
+}
+
+
+.menu.toPayOrNotToPay .infoText {
+	text-align: left;
+	font-size: 24px;
+	margin: 10px;
+}
+
+.menu.howToPay .text {
+	font-size: 20px;
+	text-align: center;
+}
+.menu.howToPay #totalToPay {
+	font-size: 20px;
+	text-align: right;
+	margin-top: 45px;
+	margin-right: 20px;
+}
+
+
+.menu.payUsingNewCardMenu .title{
+	padding-bottom: 0;
+}
+
+.menu.payUsingNewCardMenu img {
+	height: 140px;
+	margin: 10px;
+}
+
+.menu.payUsingNewCardMenu input.cardNumber {
+	width: 50px;
+	margin: 4px;
+}
+
+.menu.payUsingNewCardMenu input.cardSafetyNumber {
+	width: 60px;
+	margin: 10px;
+	margin-top: 15px;
+}
+
+.menu.payUsingNewCardMenu form {
+	text-align: left;
+	margin: 20px;
+	margin-top: 0;
+}
+
+.menu.payUsingUserCardMenu p{
+	font-size: 24px;
+	margin-top: 0px;
+	text-align: center;
+}
+
+.menu.payUsingUserCardMenu img {
+	height: 140px;
+}

@@ -1,0 +1,671 @@
+.tab{
+	background-color: rgb(100, 60, 120);
+	text-align: center;
+	height: 20%;
+	/*border-radius: 5% 0% 0% 15%;*/
+	transition: all 0.1s;
+}
+
+.foodMenu{
+	height: 480px;
+	background-color: transparent;
+	overflow: visible;
+}
+
+.menu .foodChoiceMenu{
+	overflow: hidden;
+}
+
+.menu .tab{
+	overflow: hidden;
+}
+
+
+
+.tab.selected{
+	background-color: rgb(42, 0, 75);
+	transition: all 0.1s;
+}
+.tab div{
+  font-size: 17px;
+	position: relative;
+	width: 100px;
+	top: 41px;
+	
+	left: -30px;
+	transform:  rotate(-90deg);
+}
+.textTurn{
+	transform:  rotate(-90deg);
+	text-align: center;
+	transform-origin: 50% 100% 0 ;
+	font-size: 70%;
+}
+
+
+.orderButton.notShowing{
+	opacity: 0;
+}
+
+.foodChoiceMenu{
+
+  background-color: rgb(42,0,75);
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	height: 100%;
+	width: 90%;
+}
+
+.hidden .foodChoiceMenu .main {
+	height: 0;
+	transition: all .5s;
+}
+
+.foodChoiceMenu .main{
+	position:absolute;
+	top: 60px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	width: 100%;
+	height: 420px;
+	transition: all 1s;
+}
+div.foodChoiceName {
+	font-size: 40px;
+	font-weight: 100;
+}
+
+.foodIcon{
+	position: absolute;
+	width: 130px;
+	height: 165px;
+	font-size: 22px;
+	line-height: 20px;
+}
+
+.foodIcon .fiName, .foodIcon .fiPrice{
+	position: relative;
+	color: white;
+	font-family: 'Open Sans';
+	top: 0px;
+	margin: 0;
+	text-align: center;
+	font-size: 22px;
+	line-height: 24px;
+}
+
+.hidden .foodIcon>img {
+	height: 0px;
+	transition: all .7s;
+}
+
+.foodIcon img{
+	width: 130px;
+	height: 110px;
+	transition: all .7s;
+}
+
+.foodIcon img.dangerIcon{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 40px;
+	height: 40px;
+}
+.foodIcon .fiName{
+	height: 40px;
+	line-height: 20px;
+	font-size: 20px;
+}
+
+.initial .foodIcon .fiName{
+	height: 60px;
+	line-height: 33px;
+	font-size: 30px;
+	font-weight: 100;
+}
+
+.foodIcon .fiName span{
+	transform: translate(-50%, -50%);
+  top: 50%;
+  position: absolute;
+	width: 100%;
+	transition: all .7s;
+	
+}
+
+.foodIcon .fiPrice{
+	font-size: 25px;
+	margin-top: 8px;
+}
+
+.initial .foodIcon .fiPrice{
+	font-size: 40px;
+	margin-top: 13px;
+}
+
+
+.foodDetailMenu{
+	position: absolute;
+	z-index: 40;
+	background-color: #2f0054;
+	width: 400px;
+	height: 440px;
+	left: 120px;
+	top: 240px;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
+
+.foodDetailTitle{
+	font-size: 30px;
+	margin-top: 7px;
+	text-align: center;
+}
+
+
+.foodDetailImg{
+	width: 170px;
+	height: 140px;
+	float: left;
+	align: top;
+	margin-right: 10px;
+}
+
+.foodDetailDescription{
+	text-align:justify;
+	position: absolute;
+	top:50px;
+	
+	
+}
+
+.foodDetailDescription p{
+   margin: 10px;
+}
+
+.foodDetailPrice {
+	position: absolute;
+	right: 20px;
+	bottom: 90px;
+	font-size: 30px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.toggleableIngredients {
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	width: 260px;
+	display: inline;
+	height: 102px;
+	position: absolute;
+	bottom: 87px;
+	left: 10px;
+	font-size: 17px;
+}
+
+.toggleableIngredients .container{
+	width: 200px;
+}
+
+.toggleableIngredients .container input{
+	width: 20px;
+	height: 20px;
+}
+
+.toggleableIngredients .container label{
+	position: relative;
+	bottom: 4px;
+}
+
+.toggleableIngredients .togglebleTitle{
+	font-weight: 800;
+	margin-bottom: 5px;
+}
+
+.foodDetailAddButton {
+	position: absolute;
+	right: 40px;
+	bottom: 20px;
+	border: 1px solid #FAFAFA;
+	width: 120px;
+	text-align: center;
+	padding: 10px;
+}
+
+.foodDetailCancelButton{
+	position: absolute;
+	left: 40px;
+	bottom: 20px;
+	border: 1px solid #FAFAFA;
+	width: 120px;
+	text-align: center;
+	padding: 10px;
+}
+
+.grayOutBox{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	height: 800px;
+	z-index: 39;
+	width: 420px;
+	opacity: 0.6;
+	background-color: #fafafa;
+}
+
+.grayOutBox.initial{
+	opacity: .6;
+	z-index: 5;
+	left: 550px;
+	top: 0px;
+	height: 100%;
+	width: 900px
+}
+
+.bill {
+	padding-top: 10px;
+    position: absolute;
+	left: 390px;
+	bottom: 285px;
+	width: 270px;
+	display: inline-block;
+	background-color:rgba(42, 0, 75, 1);
+
+}
+
+.bill .hBar{
+	margin: 6px 0 1px 10px;
+	height: 2px;
+	background-color: white;
+	width: 175px; 
+}
+
+.bill .price {
+	display: block;
+	font-size: 15px;
+	text-align: left;
+    margin-left: 10px;
+    width: 175px;
+    margin-bottom: 10px;
+}
+
+.bill .foodBillItem{
+	font-size: 15px;
+	width: 100%;
+	display: inline-block;
+	/*background-color: blue;*/
+}
+
+.bill .foodBillName{
+	margin-left: 10px;
+	width: 120px;
+	text-align: left;
+	float: left;
+	font-size: 15px;
+	
+}
+.bill .foodList{
+	max-height: 134px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.bill .billCover{
+	opacity: 0.6;
+	background-color: #fafafa;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.bill .foodList::-webkit-scrollbar{
+  width: 14px;
+  background-color:rgb(82,40,115);
+}
+
+.bill .foodList::-webkit-scrollbar-thumb{
+  width: 14px;
+ /* background-color: rgb(203, 203, 255);*/
+	background-color: rgb(147, 109, 166);
+}
+
+
+.bill .foodBillPrice{
+	width: 55px;
+	float: left;
+	text-align: right;
+	vertical-align: bottom;
+	font-size: 15px;
+}
+
+.bill .billEditButton{
+	width: 25px;
+	height: 30px;
+	float: left;
+	margin-left: 10px;
+	color: transparent;
+	/*background-color: red;*/
+}
+
+.bill .billEditButton>img {
+	height: 25px;
+	width: 25px;
+	opacity: 0.8;
+}
+
+.bill .billRemoveButton{
+	color: transparent;
+	
+	margin-left: 7px;
+	float: left;
+	width: 25px;
+}
+
+
+
+.bill .billRemoveButton>img{
+	height: 25px;
+	width: 25px;
+	opacity: 0.7;
+}
+
+
+.bill .priceTotal{
+	display: inline-block;
+}
+
+.bill .priceLabel{
+	display: inline-block;
+	float: right;
+}
+
+.bill .orderButton{
+  vertical-align: middle;
+	background-color: #2050A0;
+	display: inline-block;
+	padding: 7px 14px 7px 14px;
+  margin-bottom: 10px;	
+}
+
+.foodMenu.initial{
+	position: absolute;
+	width: 800px;
+	height: 100%;
+	top: 0px;
+	left: 550px;
+	display: inline-block;
+}
+.initialFoodChoiceMenu .main{
+	position: absolute;
+	top: 90px;
+	left: 0px;
+	width: 100%;
+	height: 780px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.InitialTab{
+	color: white;
+	background-color: rgb(100, 60, 120);
+	height: 100px;
+	font-family: 'Open Sans';
+	font-weight: 200;
+	font-size: 30px;
+	line-height: 90px;
+	padding-left: 20px;
+}
+
+.InitialTab.selected{
+	background-color: rgb(42, 0, 75);
+}
+
+.bigFoodTitle{
+	height: 100px;
+	background-color: rgb(231, 41, 0);
+	font-family: 'Open Sans';
+	color: white;
+	font-weight: 200;
+	font-size: 70px;
+	text-align: center;
+}
+
+.initialFoodChoiceMenu{
+	position: absolute;
+	background-color: rgb(42, 0, 75);
+	right: 0px;
+	width: 600px;
+	height: 900px;
+}
+
+/*.initialFoodChoiceMenu::-webkit-scrollbar{
+  width: 14px;
+  background-color:rgb(82,40,115);
+}
+
+.initialFoodChoiceMenu::-webkit-scrollbar-thumb{
+  width: 14px;
+	background-color: rgb(147, 109, 166);
+}*/
+
+
+
+
+.initialFoodChoiceMenu .foodIcon{
+	text-align: center;
+}
+
+.initialFoodChoiceMenu .foodIcon p{
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 28px;
+	line-height: 40px
+	
+}
+
+.initialFoodChoiceMenu .foodIcon{
+	width: 221px;
+	height: 187px;
+}
+
+.initialFoodChoiceMenu .foodIcon img{
+	width: 221px;
+	height: 187px;
+}
+
+.initialFoodChoiceMenu .foodIcon img.dangerIcon{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.bill.initial{
+	left: 805px;
+	width: 350px;
+	bottom: 240px;
+	z-index: -1;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	text-align: center;
+
+	transition: all .7s;
+}
+.initial .billEditButton{
+	width: 30px;
+	height: 35px;
+	margin-left: 17px;
+}
+
+.initial .billRemoveButton{
+	width: 30px;
+	height: 30px;
+	margin-left: 14px;
+}
+.initial .foodBillItem img{
+	width: 30px;
+	height: 30px;
+}
+
+
+.bill.initial .price{
+	margin: 10px;
+	width: 220px;
+	font-size: 20px;
+}
+
+.bill.initial .foodList {
+	max-height: 340px;
+
+}
+
+.bill.initial .priceLabel {
+	display: inline-block;
+	float: right;
+}
+.bill.initial .foodBillName {
+	font-size: 20px;
+	width: 150px;
+
+}
+
+.initial.bill .foodBillPrice{
+	font-size: 20px;
+	width: 70px;
+}
+
+.bill.initial.behind{
+	left:450px;
+	background-color: rgb(100, 60, 120);
+	transition: all .7s;
+}
+.bill.initial .hBar {
+	height: 2px;
+	background-color: white;
+	width: 220px;
+	margin: 6px 0 1px 10px;
+}
+
+.initial.foodDetailMenu{
+	position: absolute;
+	z-index: 40;
+	background-color: #2f0054;
+	width: 800px;
+	height: 880px;
+	left: 800px;
+	top: 45px;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
+
+.initial.foodDetailMenu .foodDetailTitle{
+	font-size: 60px;
+	margin-top: 7px;
+	text-align: center;
+}
+
+
+.initial.foodDetailMenu .foodDetailImg{
+	width: 340px;
+	height: 280px;
+	float: left;
+	margin-right: 20px;
+}
+
+.initial.foodDetailMenu .foodDetailDescription{
+	text-align:justify;
+	position: absolute;
+	top:90px;
+}
+
+.initial.foodDetailMenu .foodDetailDescription>p{
+   margin: 10px;
+   font-size: 28px;
+}
+
+.initial.foodDetailMenu .foodDetailPrice {
+	position: absolute;
+	right: 40px;
+	bottom: 180px;
+	font-size: 50px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.initial.foodDetailMenu .toggleableIngredients {
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	width: 420px;
+	display: inline;
+	height: 260px;
+	position: absolute;
+	bottom: 160px;
+	left: 10px;
+	font-size: 36px;
+}
+
+
+.initial>.toggleableIngredients .container{
+	width: 420px;
+}
+
+.initial>.toggleableIngredients .container input{
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+}
+
+.initial>.toggleableIngredients .container label{
+	position: relative;
+	bottom: 8px;
+}
+
+.initial>.toggleableIngredients .togglebleTitle{
+	font-weight: 800;
+	margin-bottom: 5px;
+}
+
+.initial.foodDetailMenu .foodDetailAddButton {
+	position: absolute;
+	right: 80px;
+	bottom: 40px;
+	border: 2px solid #FAFAFA;
+	width: 240px;
+	text-align: center;
+	padding: 15px;
+	font-size: 36px;
+}
+
+.initial.foodDetailMenu .foodDetailCancelButton{
+	position: absolute;
+	left: 80px;
+	bottom: 40px;
+	border: 2px solid #FAFAFA;
+	width: 240px;
+	text-align: center;
+	padding: 15px;
+	font-size: 36px;
+}
+
+.initial.foodDetailMenu .foodDetailDescription .dangerIcon{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 6px;
+	top: 6px;
+	
+}
+
+.foodDetailMenu .foodDetailDescription .dangerIcon{
+	width: 50px;
+	height:  50px;
+	position: absolute;
+	left: 6px;
+	top: 6px;
+	
+}

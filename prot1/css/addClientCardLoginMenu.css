@@ -1,0 +1,84 @@
+.designCard {
+	display: inline-block;
+	width: 160px;
+
+	margin-top: -20px;
+	margin-bottom: -20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	vertical-align: top;
+	filter: drop-shadow(0px 0px 0px white);
+	transition: all 0.7s;
+}
+
+.designCard.selected{
+	filter: drop-shadow(0px 0px 7px white);
+	transition: all 0.7s;
+}
+
+.designCard.hidden {
+	opacity: 0;
+	transition: all 0.7s;
+}
+
+.designCard.selected.hidden{
+	opacity: 0;
+	transition: all 0.7s;
+}
+
+.smallForm{
+	margin-left: 3px;
+	padding-left: 0px;
+	text-align: left;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	z-index: 3;
+	
+}
+
+.whiteCard{
+	color: black;
+}
+
+.blackCard{
+	color: white;
+}
+
+
+#selectedCard {
+	width: 250px;
+	margin-top: -30px;
+	margin-bottom: -20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	vertical-align: top;
+	
+}
+
+#cardText {
+	position: absolute;
+	top: 286px;
+	left: 85px;
+	font-size: 10px;
+}
+
+#ccld_info {
+	text-align: center;
+	margin-top: 2px;
+	
+}
+
+#ccld_title {
+	margin-bottom: 4px;
+}
+
+#ccln_info {
+	text-align: left;
+	margin-left: 3px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+#ccln_title {
+	margin-bottom: 4px;
+}

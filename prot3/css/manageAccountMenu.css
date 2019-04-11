@@ -1,0 +1,365 @@
+/*** MANAGE ADRESS ***/
+
+#addresses_table {
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	width: 100%;
+	margin: 0;
+	margin-bottom: 5px;
+
+	transition: all .7s;
+}
+
+#addresses_table tr {
+	background-color: rgb(102, 60, 135);
+}
+
+#addresses_table tr:active {
+	background-color: rgb(142, 100, 175);
+}
+
+#addresses_table td {
+	margin-top:10px;
+	margin-bottom:10px;
+	padding: 10px;
+	font-weight: bold;
+	transition: all .7s;
+}
+
+#addresses_table td>img {
+	height: 15px;
+	transition: all .7s;
+}
+
+#addresses_table td.addresses_names {
+	text-align: right;
+}
+
+#addresses_table td.addresses_locals {
+	text-align: left;
+	font-weight: normal;
+}
+
+.hidden#adresses_table  ,
+.hidden#addresses_table td ,
+.hidden#addresses_table td>img {
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+	height: 0;
+
+	transition: all .7s;
+}
+
+ /* Add new address */
+.newAddressMenu .Map img{
+	
+}
+
+.newAddressMenu .Map{
+	height: 226px;
+	right: 79px;
+	top: 135px;
+}
+
+.newAddressMenu input{
+	padding: 2px;
+	border-width: 1px;
+}
+
+.newAddressMenu  .nameContainer{
+	position:relative;
+	text-align: left;
+}
+
+.newAddressMenu  .nameContainer input{
+	width: 212px;
+	position: absolute;
+	left: 70px;
+	height: 20px;
+}
+
+.newAddressMenu  .addrContainer{
+	position:relative;
+	text-align: left;
+	top:10px;
+	height: 20px;
+}
+
+.newAddressMenu  .addrContainer input{
+	position: absolute;
+	left: 70px;
+	height: 20px;
+	width: 212px;
+}
+
+.newAddressMenu .searchButton{
+	top: 0px;
+	left: 288px;
+	font-size: 20px;
+	line-height: 20px;
+	width: 25px;
+	height: 23px;
+}
+
+.editAddressMenu .Map img{
+	
+}
+
+.editAddressMenu .Map{
+	height: 226px;
+	right: 79px;
+	top: 135px;
+}
+
+.editAddressMenu input{
+	padding: 2px;
+	border-width: 1px;
+}
+
+.editAddressMenu  .nameContainer{
+	position:relative;
+	text-align: left;
+}
+
+.editAddressMenu  .nameContainer input{
+	width: 212px;
+	position: absolute;
+	left: 70px;
+	height: 20px;
+}
+
+.editAddressMenu  .addrContainer{
+	position:relative;
+	text-align: left;
+	top:10px;
+	height: 20px;
+}
+
+.editAddressMenu  .addrContainer input{
+	position: absolute;
+	left: 70px;
+	height: 20px;
+	width: 212px;
+}
+
+.editAddressMenu .searchButton{
+	top: 0px;
+	left: 288px;
+	font-size: 20px;
+	line-height: 20px;
+	width: 25px;
+	height: 23px;
+}
+
+.imageWCaption.transport_img img {
+	height: 60px;
+}
+
+.newTransport_img {
+	height: 70px;
+	margin: 5px;
+}
+
+.transportForm {
+	margin:20px;
+	margin-bottom: 8px;
+}
+.transportForm .textInput {
+	width: 200px;
+	margin: 5px;
+}
+
+.editTransportsAccountMenu img {
+	height: 120px;
+}
+
+.editTransportsAccountMenu .removeButton {
+	margin-top: 10px;
+}
+
+.addNewTransportsAccountMenu img {
+	height: 130px;
+	margin: 10px;
+}
+
+.tableContainer{
+	overflow-y: auto;
+	overflow-x: hidden;
+	height:170px;
+	width: 350px
+}
+.tableContainer::-webkit-scrollbar{
+	width: 10px;
+}
+
+.tableContainer::-webkit-scrollbar-track{
+	background-color: rgb(80, 36, 115);
+}
+.tableContainer::-webkit-scrollbar-thumb{
+	background-color: rgb(198, 169, 220);
+}
+
+/*** MANAGE PAYMENT METHODS ***/
+
+.menu.availablePaymentServicesMenu .text {
+	margin-bottom: 0px;
+}
+
+.menu.addNewCardPaymentMethodMenu .title{
+	padding-bottom: 0;
+}
+
+.menu.addNewCardPaymentMethodMenu img {
+	height: 140px;
+	margin: 10px;
+}
+
+.menu.addNewCardPaymentMethodMenu input.cardNumber {
+	width: 50px;
+	margin: 4px;
+}
+
+.menu.addNewCardPaymentMethodMenu input.cardSafetyNumber {
+	width: 60px;
+	margin: 10px;
+	margin-top: 15px;
+}
+
+.menu.addNewCardPaymentMethodMenu form {
+	text-align: left;
+	margin: 20px;
+	margin-top: 0;
+}
+
+.menu.menu.editCardPaymentMethodMenu .title{
+	padding-bottom: 0;
+}
+
+.menu.editCardPaymentMethodMenu img {
+	height: 120px;
+}
+
+.menu.editCardPaymentMethodMenu input.cardNumber {
+	width: 50px;
+	margin: 4px;
+}
+
+.menu.editCardPaymentMethodMenu input.cardSafetyNumber {
+	width: 60px;
+	margin: 10px;
+	margin-top: 15px;
+}
+
+.menu.editCardPaymentMethodMenu form {
+	text-align: left;
+	margin: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+.menu.editCardPaymentMethodMenu .removeButton {
+	margin-top: 10px;
+}
+
+
+.menu.addNewOtherPaymentMethodMenu img {
+	height: 140px;
+	margin: 10px;
+}
+
+.menu.addNewOtherPaymentMethodMenu form {
+	margin:20px;
+	margin-bottom: 8px;
+}
+
+.menu.addNewOtherPaymentMethodMenu .textInput {
+	width: 200px;
+	margin: 5px;
+}
+
+.menu.editOtherPaymentMethodMenu img {
+	height: 105px;
+	margin: 10px;
+}
+
+.menu.editOtherPaymentMethodMenu form {
+	margin:20px;
+	margin-bottom: 0px;
+}
+
+.menu.editOtherPaymentMethodMenu .textInput {
+	width: 200px;
+	margin: 5px;
+}
+
+/*** MANAGE INVOICE INFO ***/
+
+#invoiceForm {
+	margin: 30px;
+}
+
+#NIFinput {
+	width: 190px;
+	margin:4px;
+	margin-bottom: 30px;
+}
+
+.invoiceTextInput {
+	margin: 4px;
+	width: 190px;
+}
+
+/*** MANAGE FOOD RESTRICTIONS ***/
+/*
+.checkbox {
+	text-align: left;
+	font-size: 20px;
+	height: 30px;
+	margin: 6px;
+	margin-left: 25px;
+
+	transition: all .7s;
+}
+
+.checkboxInput {
+	margin:6px;
+	width: 18px;
+	height: 18px;
+}
+
+.food_restrictions_text {
+	font-size: 20px;
+	text-align: left;
+	transition: all .7s;
+	margin: 10px;
+	margin-left: 25px;
+}
+
+.hidden .informative_text,
+.hidden .checkbox        {
+	font-size: 0;
+	height: 0;
+
+	transition: all .7s;
+} */
+
+.menu.manageFoodRestrictionsMenu table{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.menu.manageFoodRestrictionsMenu th {
+	padding-bottom: 10px;
+}
+
+.menu.manageFoodRestrictionsMenu .secondCol,
+.menu.manageFoodRestrictionsMenu .thirdCol {
+	width: 90px;
+}
+
+.menu.manageFoodRestrictionsMenu input{
+	height: 20px;
+	width: 20px;
+}

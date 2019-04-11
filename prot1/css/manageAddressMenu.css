@@ -1,0 +1,51 @@
+#addresses_table {
+	font-size: 15px;
+	color: white;
+	width: 95%;
+	margin: 0;
+	margin-bottom: 5px;
+
+	transition: all .7s;
+}
+
+#addresses_table td {
+	background-color: rgb(102, 60, 135);
+	margin-top:10px;
+	margin-bottom:10px;
+	padding: 10px;
+	font-weight: bold;
+	transition: all .7s;
+}
+
+#addresses_table td>img {
+	height: 15px;
+	transition: all .7s;
+}
+
+.addresses_names {
+	text-align: right;
+}
+
+.addresses_locals {
+	text-align: left;
+	font-weight: normal;
+}
+
+.hidden#adresses_table  ,
+.hidden#addresses_table td ,
+.hidden#addresses_table td>img {
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+	height: 0;
+
+	transition: all .7s;
+}
+
+.imageWCaption.transport_img img {
+	height: 60px;
+}
+
+.newTransport_img {
+	height: 70px;
+}

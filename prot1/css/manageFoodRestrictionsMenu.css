@@ -1,0 +1,21 @@
+.checkbox {
+	text-align: left;
+	font-size: 20px;
+	height: 30px;
+
+	transition: all .7s;
+}
+
+.informative_text {
+	font-size: 20px;
+	text-align: left;
+	transition: all .7s;
+}
+
+.hidden .informative_text,
+.hidden .checkbox        {
+	font-size: 0;
+	height: 0;
+
+	transition: all .7s;
+}

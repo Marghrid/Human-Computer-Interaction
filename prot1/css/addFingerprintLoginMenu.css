@@ -1,0 +1,19 @@
+#add_fingerprint_img {
+	display: inline-block;
+	width: 80px;
+	margin: 20px;
+	margin-top: 0;
+	vertical-align: top;
+}
+
+#add_fingerprint_txt {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 0;
+	width: 150px;
+	font-size: 19px;
+}
+
+#add_fingerprint_all_div {
+	padding: 40px;
+}

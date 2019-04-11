@@ -1,0 +1,103 @@
+/* Choose transport menu : */
+
+.chooseTransportTable {
+	background-color: #663c87;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	border-collapse: collapse;
+	transition: all .7s;
+}
+
+.chooseTransportTitle {
+	font-size: 20px; 
+	transition: all .7s;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.chooseTransportTable img {
+	height: 30px;
+	transition: all .7s;
+}
+
+.hidden.chooseTransportTable img {
+	height: 0;
+	transition: all .7s;
+}
+
+.chooseTransportTable tr{
+	margin: 20px;
+	transition: all .7s;
+}
+
+.chooseTransportTable tr:active{
+	background-color: #865ca7;
+	transition: all 0s;
+
+}
+
+.chooseTransportTable td {
+	margin: 0px;
+	padding: 7px;
+	font-size: 17px;
+	line-height: 17px;
+	border-top: 4px solid #2a0048;
+	border-bottom: 4px solid #2a0048;
+	transition: all .7s;
+
+}
+
+.chooseTransportTable .firstColumn {
+	font-size: 13px;
+	width: 100px;
+}
+
+.chooseTransportTable .secondColumn {
+	width: 130px;
+}
+
+.chooseTransportTable .thirdColumn {
+	width: 130px;
+}
+
+/* Call transport menu : */
+.callTransportMenu {
+	text-align: center;
+	align-content: center;
+}
+
+.callTransportMenu p {
+	font-size: 25px;
+	text-align: center;
+}
+
+.callTransportMenu img {
+	height: 150px;
+	margin-top: 40px;
+}
+
+/* Login Transports Account Menu */
+
+.loginTransportsAccountMenu {
+	align-content: center;
+	text-align: center;
+}
+.menu.loginTransportsAccountMenu .title {
+	font-size:25px;
+	margin: 0;
+	text-align: center;
+}
+
+.loginTransportsAccountMenu img {
+	height: 140px;
+	margin: 0;
+}
+
+.loginTransportsAccountMenu .textInput {
+	width: 200px;
+	margin: 5px;
+}
+
+.loginTransportsAccountMenu form {
+	margin:20px;
+}

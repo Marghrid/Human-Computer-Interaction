@@ -1,0 +1,33 @@
+.menu.entertainmentMenu img.bandImg {
+	width: 100px;
+	float: left;
+	margin-right: 15px;
+
+	transition: all .7s;
+}
+
+.hidden.menu.entertainmentMenu img.bandImg {
+	width: 0;
+	float: left;
+	margin-right: 0;
+	transition: all .7s;
+}
+
+.menu.entertainmentMenu img.bistroLogo {
+	height: 30px;
+	margin-left: 5px;
+}
+
+.menu.entertainmentMenu .heading {
+	font-size: 24px;
+	margin:5px;
+}
+
+.menu.entertainmentMenu .description {
+	font-size: 20px;
+}
+
+.menu.entertainmentMenu .proceedButton {
+	font-size: 20px;
+	margin-top: 0;
+}

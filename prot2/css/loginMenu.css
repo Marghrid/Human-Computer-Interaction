@@ -1,0 +1,54 @@
+#card {
+	display:        inline-block;
+	vertical-align: middle;
+
+	border-color:  white;
+	border-style:  dashed;
+	border-width:  5px;
+	border-radius: 10px;
+
+	height:      95px;
+	width:       150px;
+	margin:      20px;
+	padding:     15px;
+	
+	font-family: 'Open Sans', sans-serif;
+	font-size:   20px;
+	text-align:  center;
+	color:       white;
+
+	transition: all .5s;
+}
+
+#fingerprint {
+	display:        inline-block;
+	height:         70px;
+	margin:         20px;
+	vertical-align: middle;
+
+	transition: all .5s;
+}
+
+#loginMenuForm{
+	padding: 28px;
+}
+
+.textInput.loginMenu {
+	width: 180px;
+	margin-left: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.hidden.login.menu        ,
+.hidden #fingerprint_card ,
+.hidden #fingerprint      ,
+.hidden #card             {
+	height:         0;
+	font-size:      0;
+	padding-top:    0;
+	padding-bottom: 0;
+	border-width:   0;
+
+	transition: all .5s;
+}

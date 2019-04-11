@@ -1,0 +1,266 @@
+.mapSidebar{
+  background-color: rgb(82,40,115);
+  position: absolute;
+  left: 0%;
+	bottom: 0%;
+	width: 25%;
+	height: 100%;
+  overflow-y: auto;
+  overflow-x:hidden;
+  direction: rtl;
+}
+
+.mapSidebar::-webkit-scrollbar{
+  width: 14px;
+  background-color:rgb(82,40,115);
+}
+
+.mapSidebar::-webkit-scrollbar-thumb{
+  width: 14px;
+  background-color: rgb(203, 203, 255);
+}
+
+.mapBox{
+  background-color: rgb(80,80,140);;
+  position: absolute;
+  left: 0px;
+  top: 70px;
+  height: 295px;
+  width: 100%
+}
+
+.mapBox.noTabSelected{
+  background-color: rgb(130,130,160);
+}
+
+.noTabs .Map{
+  right: 48px;
+}
+
+.noTabs .mapBox{
+  background: transparent;
+}
+
+.noTabs .searchBox{
+  width: 320px;
+}
+.noTabs .searchBox input{
+  width: 190px;
+}
+
+.noTabs .searchButton{
+  left: 230px;
+}
+
+/* Isto Ã© giro, mas nao e o que eu quero 
+.mapTab{
+  border-color: rgb(82,40,115);
+  background: linear-gradient(rgb(130,130,160), rgb(110,110,130) 90%, rgb(50,50,100) 100%);
+  background-color: rgb(130,130,160);
+  height: 50px;
+  transition: all 0.7s;
+  
+}
+
+.mapTab.selected{  
+  background: linear-gradient(rgb(160,160,190), rgb(140,140,170) 90%, rgb(90,90,140) 100%);
+  transition: all 0s;
+} */
+
+
+
+.mapTab span{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 18px;
+  font-size: 16px;
+}
+.mapTab{
+  border-color: rgb(82,40,115);
+  background-color: rgb(130,130,160);
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  padding-left: 2px;
+  transition: all 0.7s;
+  
+}
+
+.mapTab img{
+	width: 20px;
+}
+
+.mapTab.selected{  
+  background-color:  rgb(80,80,140);
+  transition: all 0s;
+} 
+
+.Map{
+  position: absolute;
+  right: 0px;
+  background-color: blue;
+  height: 100%;
+}
+
+.Map img {
+  height: 100%
+}
+
+.mapTextLabel{
+  width: 170px;
+}
+
+.searchBox {
+  position: absolute;
+  right: 0;
+  top: 18px;
+  width: 323px;
+  height: 47px;
+  margin: 0;
+}
+
+.searchBox img{
+  position: absolute;
+  left: -8px;
+  top: 5px;
+  height: 80%
+}
+
+.searchBox input{
+  font-size: 15px;
+  border-width: 1px;
+  padding: 2px;
+  position: absolute;
+  left: 35px;
+  top: 6px;
+  height: 30px;
+  width: 225px;
+}
+
+.searchButton {
+  position: absolute;
+  line-height: 30px;
+  font-size: 30px;
+  opacity: 100;
+  top: 6px;
+  left: 265px;
+  width: 40px;
+  height: 34px;
+  border-width: 1px;
+  border-style: solid;
+  
+}
+
+.searchButton.disabled{
+  opacity: 0;
+}
+
+.mapBox .proceedButton{
+  position: absolute;
+  bottom: 10px;
+  
+}
+
+/* Choose transport menu : */
+
+.chooseTransportTable {
+  background-color: #663c87;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  border-collapse: collapse;
+  transition: all .7s;
+}
+
+.chooseTransportTitle {
+  font-size: 20px; 
+  transition: all .7s;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.chooseTransportTable img {
+  height: 30px;
+  transition: all .7s;
+}
+
+.hidden.chooseTransportTable img {
+  height: 0;
+  transition: all .7s;
+}
+
+.chooseTransportTable tr{
+  margin: 20px;
+  transition: all .7s;
+}
+
+.chooseTransportTable tr:active{
+  background-color: #865ca7;
+  transition: all 0s;
+
+}
+
+.chooseTransportTable td {
+  margin: 0px;
+  padding: 7px;
+  font-size: 17px;
+  line-height: 17px;
+  border-top: 4px solid #2a0048;
+  border-bottom: 4px solid #2a0048;
+  transition: all .7s;
+
+}
+
+.chooseTransportTable .firstColumn {
+  font-size: 13px;
+  width: 100px;
+}
+
+.chooseTransportTable .secondColumn {
+  width: 130px;
+}
+
+.chooseTransportTable .thirdColumn {
+  width: 130px;
+}
+
+/* Call transport menu : */
+.callTransportMenu {
+  text-align: center;
+  align-content: center;
+}
+
+.callTransportMenu p {
+  font-size: 25px;
+  text-align: center;
+}
+
+.callTransportMenu img {
+  height: 150px;
+  margin-top: 40px;
+}
+
+/* Login Transports Account Menu */
+
+.loginTransportsAccountMenu {
+  align-content: center;
+  text-align: center;
+}
+.menu.loginTransportsAccountMenu .title {
+  font-size:25px;
+  margin: 0;
+  text-align: center;
+}
+
+.loginTransportsAccountMenu img {
+  height: 140px;
+  margin: 0;
+}
+
+.loginTransportsAccountMenu .textInput {
+  width: 200px;
+  margin: 5px;
+}
+
+.loginTransportsAccountMenu form {
+  margin:20px;
+}

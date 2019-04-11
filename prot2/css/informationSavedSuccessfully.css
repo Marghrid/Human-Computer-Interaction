@@ -1,0 +1,16 @@
+.successMessage img,
+.failureMessage img {
+	width: 130px;
+}
+
+.successMessage p,
+.failureMessage p {
+	color: white;
+	font-size: 25px;
+	text-align: center;
+}
+
+.successMessage,
+.failureMessage {
+	text-align: center;
+}

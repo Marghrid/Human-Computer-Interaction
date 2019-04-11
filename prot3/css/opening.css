@@ -1,0 +1,106 @@
+.welcome{
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 150px;
+  font-weight: 300;
+  left: 480px;
+  top: 30px;
+  color: #303030;
+  
+}
+
+.pressToClick{
+  position: absolute;
+  font-family: 'Open Sans',  sans-serif;
+  font-size: 80px;
+  font-weight: 300;
+  top: 700px;
+  left: 550px;
+}
+
+.logo.initial{
+  width: 1000px;
+  left: 450px;
+  top: 300px;
+  transition: all 0.7s;
+}
+
+.clickableArea{
+  width:100%;
+  height:100%;
+  z-index: 600;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: #303030;
+
+}
+
+.initialFoodChoiceName{
+  color: white;
+  font-family: 'Open Sans';
+  font-size: 65px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.videoCover {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+  background-color: #fafafa;
+  opacity: 0.75;
+}
+
+.occluder{
+   position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 400;
+  background-color: #fafafa;
+  opacity: 1;
+  animation: fade-back 1s;
+  -webkit-animation: fade-back 1s;  
+}
+
+.occluder.showing{
+  opacity: 0;
+  animation: fade 1s;
+  -webkit-animation: fade 1s;
+  z-index: -400;
+}
+
+::-webkit-scrollbar{
+  width: 14px;
+  background-color:rgb(82,40,115);
+}
+
+::-webkit-scrollbar-thumb{
+  width: 14px;
+  background-color: rgb(147, 109, 166);
+}
+
+@keyframes fade{
+  0% {opacity: 1; z-index: 400}
+  100% {opacity: 0;  z-index: 400}
+}
+
+@keyframes fade-back{
+  0% {opacity: 0;  z-index: 400}
+  100% {opacity: 1; z-index: 400}
+}
+
+@-webkit-keyframes fade{
+  0% {opacity: 1; z-index: 400}
+  100% {opacity: 0;  z-index: 400}
+}
+
+@-webkit-keyframes fade-back{
+  0% {opacity: 0;  z-index: 400}
+  100% {opacity: 1; z-index: 400}
+}

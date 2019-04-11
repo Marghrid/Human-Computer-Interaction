@@ -1,0 +1,161 @@
+.mapSidebar{
+  background-color: rgb(82,40,115);
+  position: absolute;
+  left: 0%;
+	bottom: 0%;
+	width: 25%;
+	height: 100%;
+  overflow-y: auto;
+  overflow-x:hidden;
+  direction: rtl;
+}
+
+.mapSidebar::-webkit-scrollbar{
+  width: 14px;
+  background-color:rgb(82,40,115);
+}
+
+.mapSidebar::-webkit-scrollbar-thumb{
+  width: 14px;
+  background-color: lightgray;
+}
+
+.mapBox{
+  background-color: rgb(60,70,200);
+  position: absolute;
+  left: 0px;
+  top: 70px;
+  height: 295px;
+  width: 100%
+}
+
+.mapBox.noTabSelected{
+  background-color: rgb(130,130,160);
+}
+
+.noTabs .Map{
+  right: 48px;
+}
+
+.noTabs .mapBox{
+  background: transparent;
+}
+
+.noTabs .searchBox{
+  width: 320px;
+}
+.noTabs .searchBox input{
+  width: 190px;
+}
+
+.noTabs .searchButton{
+  left: 230px;
+}
+
+/* Isto é giro, mas nao e o que eu quero 
+.mapTab{
+  border-color: rgb(82,40,115);
+  background: linear-gradient(rgb(130,130,160), rgb(110,110,130) 90%, rgb(50,50,100) 100%);
+  background-color: rgb(130,130,160);
+  height: 50px;
+  transition: all 0.7s;
+  
+}
+
+.mapTab.selected{  
+  background: linear-gradient(rgb(160,160,190), rgb(140,140,170) 90%, rgb(90,90,140) 100%);
+  transition: all 0s;
+} */
+
+
+
+.mapTab span{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 18px;
+  font-size: 16px;
+}
+.mapTab{
+  border-color: rgb(82,40,115);
+  background-color: rgb(130,130,160);
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  transition: all 0.7s;
+  
+}
+
+.mapTab img{
+	width: 20px;
+}
+
+.mapTab.selected{  
+  background-color:  rgb(60,70,200);
+  transition: all 0s;
+} 
+
+.Map{
+  position: absolute;
+  right: 0px;
+  background-color: blue;
+  height: 100%;
+}
+
+.Map img {
+  height: 100%
+}
+
+.mapTextLabel{
+  width: 170px;
+}
+
+.searchBox {
+  position: absolute;
+  right: 0;
+  top: 18px;
+  width: 323px;
+  height: 47px;
+  margin: 0;
+}
+
+.searchBox img{
+  position: absolute;
+  left: -8px;
+  top: 5px;
+  height: 80%
+}
+
+.searchBox input{
+  font-size: 15px;
+  border-width: 1px;
+  padding: 2px;
+  position: absolute;
+  left: 35px;
+  top: 6px;
+  height: 30px;
+  width: 225px;
+}
+
+.searchButton {
+  position: absolute;
+  line-height: 30px;
+  font-size: 30px;
+  opacity: 100;
+  top: 6px;
+  left: 265px;
+  width: 40px;
+  height: 34px;
+  border-width: 1px;
+  border-style: solid;
+  
+}
+
+.searchButton.disabled{
+  opacity: 0;
+}
+
+.mapBox .proceedButton{
+  position: absolute;
+  bottom: 10px;
+  
+}

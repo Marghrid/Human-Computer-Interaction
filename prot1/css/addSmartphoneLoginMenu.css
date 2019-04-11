@@ -1,0 +1,12 @@
+.smartphone_td {
+	font-size: 20px;
+	font-family: Verdana, sans-serif;
+	background-color: rgb(102, 60, 135);
+	padding: 7px;
+	width: 300px;
+	margin:auto;
+}
+
+.smartphone_td.selected {
+	background-color:rgb(142, 100, 175);
+}
